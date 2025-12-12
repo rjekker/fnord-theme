@@ -881,7 +881,16 @@ find a matching paren across a large piece of code."
     (flycheck-fringe-warning :foreground 13 :weight bold)
     (flycheck-info :underline (:style wave :color 8))
     (flycheck-warning :underline (:style wave :color 13))
+    (flyspell-incorrect :underline (:style wave :color 11))
+    (flyspell-duplicate :underline (:style wave :color 12))
 
+    ;; Flymake
+    (flymake-warning :underline (:style wave :color 13))
+    (flymake-warning-echo :inherit compilation-warning :weight normal)
+    (flymake-warning-echo-at-eol :inherit compilation-warning :weight normal)
+    (flymake-error-echo :inherit compilation-error :weight normal)
+    (flymake-error-echo-at-eoll :inherit compilation-error :weight normal)
+    
     ;; Rainbow Delimiters
     ;; trying to get some distance between the colours
     (rainbow-delimiters-depth-1-face :foreground 4)
